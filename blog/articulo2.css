@@ -240,3 +240,100 @@ font-size:32px;
 }
 
 }
+
+/* ========================= */
+/* BLOG / ARTICULO */
+/* ========================= */
+
+.blog-text {
+  max-width: 560px;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #4a5a67;
+}
+
+.blog-text p {
+  margin-bottom: 18px;
+}
+
+/* ========================= */
+/* PALABRAS CLAVE */
+/* ========================= */
+
+.highlight {
+  font-weight: 600;
+  color: #2f4f6a;
+}
+
+/* ========================= */
+/* FRASE IMPORTANTE */
+/* ========================= */
+
+.key-phrase {
+  font-weight: 600;
+  color: #2f4f6a;
+  font-size: 18px;
+}
+
+/* ========================= */
+/* BLOQUE DESTACADO */
+/* ========================= */
+
+.medical-note {
+  border-left: 3px solid #7fa6c3;
+  padding-left: 16px;
+  margin: 20px 0;
+  color: #44535f;
+  font-style: italic;
+}
+
+/* ========================= */
+/* SUBTITULO DEL ARTICULO */
+/* ========================= */
+
+.blog-subtitle {
+  font-size: 28px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #2f4f6a;
+  line-height: 1.3;
+}
+
+/* ========================= */
+/* MEJORAR TITULOS EN MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .blog-text {
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .blog-subtitle {
+    font-size: 24px;
+  }
+
+  .key-phrase {
+    font-size: 17px;
+  }
+
+}
+
+/* ========================= */
+/* AJUSTE PARA CELULARES */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+  .blog-text {
+    font-size: 15.5px;
+    line-height: 1.7;
+  }
+
+  .blog-subtitle {
+    font-size: 22px;
+  }
+
+}

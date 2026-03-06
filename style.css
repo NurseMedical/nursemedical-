@@ -944,3 +944,132 @@ body {
   }
 
 }
+
+/* ========================= */
+/* FORMULARIO CONTACTO */
+/* ========================= */
+
+.contact-form{
+  background:#f6f7f8;
+  padding:40px;
+  border-radius:14px;
+  width:100%;
+  max-width:480px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  animation:fadeUp 0.8s ease;
+}
+
+/* FORM */
+
+.contact-form form{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+/* INPUTS */
+
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  border:none;
+  border-bottom:1px solid #ccd3d9;
+  padding:12px 5px;
+  font-size:15px;
+  background:transparent;
+  outline:none;
+  transition:0.3s;
+}
+
+/* TEXTAREA */
+
+.contact-form textarea{
+  height:90px;
+  resize:none;
+}
+
+/* FOCUS */
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+  border-bottom:2px solid #3f5f79;
+}
+
+/* BOTON */
+
+.contact-form button{
+  width:100%;
+  background:#3f5f79;
+  color:white;
+  padding:14px;
+  border-radius:6px;
+  border:none;
+  font-size:15px;
+  cursor:pointer;
+  transition:all 0.3s ease;
+}
+
+.contact-form button:hover{
+  background:#2f4a60;
+  transform:translateY(-2px);
+  box-shadow:0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* MENSAJE EXITO */
+
+.mensaje-exito{
+  display:none;
+  background:#e8f6f3;
+  padding:20px;
+  margin-top:20px;
+  border-radius:10px;
+  text-align:center;
+  color:#2f4f6a;
+  animation:fadeUp 0.5s ease;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width:900px){
+
+.contact-form{
+  max-width:100%;
+  padding:30px;
+}
+
+}
+
+@media (max-width:480px){
+
+.contact-form{
+  padding:25px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  font-size:14px;
+}
+
+.contact-form button{
+  font-size:14px;
+  padding:13px;
+}
+
+}
+
+/* ========================= */
+/* ANIMACION */
+/* ========================= */
+
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
