@@ -1073,3 +1073,16 @@ body {
     transform:translateY(0);
   }
 }
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons img {
+  width: 28px;
+  height: 28px;
+  transition: 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
