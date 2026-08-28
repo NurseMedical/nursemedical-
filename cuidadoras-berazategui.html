@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cuidadoras en Berazategui | Cuidados a domicilio | Nurse Medical</title>
+
+  <meta name="description"
+    content="Servicio de cuidadoras a domicilio en Berazategui. Acompañamiento personalizado para adultos mayores y personas que necesitan asistencia en su rutina diaria.">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://nursemedical.com.ar/cuidadoras-berazategui.html">
+
+  <link rel="icon" type="image/png" href="icon.png">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Belleza&family=Cardo:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Cardo", serif;
+      color: #143657;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    h1,
+    h2,
+    h3,
+    nav,
+    .button {
+      font-family: "Belleza", sans-serif;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e8edf1;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: #143657;
+      font-family: "Belleza", sans-serif;
+      font-size: 22px;
+    }
+
+    .brand img {
+      width: 38px;
+      height: 38px;
+      object-fit: contain;
+    }
+
+    nav {
+      display: flex;
+      gap: 28px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #143657;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      opacity: .65;
+    }
+
+    .hero {
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      padding: 80px 8%;
+      background:
+        linear-gradient(120deg, #edf3f6 0%, #ffffff 65%);
+    }
+
+    .hero-content {
+      max-width: 720px;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+      margin-bottom: 18px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(42px, 6vw, 72px);
+      line-height: 1.05;
+      font-weight: 400;
+      margin-bottom: 26px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 650px;
+      margin-bottom: 34px;
+      color: #34516c;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 25px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 17px;
+      transition: .2s;
+    }
+
+    .button-primary {
+      background: #143657;
+      color: white;
+    }
+
+    .button-secondary {
+      border: 1px solid #143657;
+      color: #143657;
+      background: white;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    section {
+      padding: 85px 8%;
+    }
+
+    .section-light {
+      background: #f4f7f8;
+    }
+
+    .section-header {
+      max-width: 740px;
+      margin-bottom: 45px;
+    }
+
+    h2 {
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 400;
+      line-height: 1.15;
+      margin-bottom: 18px;
+    }
+
+    .section-header p {
+      font-size: 18px;
+      color: #49647c;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border: 1px solid #e1e8ec;
+      border-radius: 6px;
+    }
+
+    .card h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+      font-weight: 400;
+    }
+
+    .card p {
+      color: #506a80;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: start;
+    }
+
+    .list {
+      list-style: none;
+      margin-top: 25px;
+    }
+
+    .list li {
+      padding: 13px 0;
+      border-bottom: 1px solid #dfe6ea;
+      font-size: 17px;
+    }
+
+    .list li::before {
+      content: "✓";
+      margin-right: 12px;
+      font-weight: bold;
+    }
+
+    .notice {
+      background: #143657;
+      color: white;
+      padding: 35px;
+      border-radius: 6px;
+    }
+
+    .notice h3 {
+      font-size: 26px;
+      margin-bottom: 15px;
+      font-weight: 400;
+    }
+
+    .notice p {
+      opacity: .9;
+    }
+
+    .faq {
+      max-width: 900px;
+    }
+
+    .faq-item {
+      padding: 25px 0;
+      border-bottom: 1px solid #dbe4e9;
+    }
+
+    .faq-item h3 {
+      font-size: 21px;
+      margin-bottom: 9px;
+      font-weight: 400;
+    }
+
+    .faq-item p {
+      color: #526b80;
+    }
+
+    .cta {
+      text-align: center;
+      background: #143657;
+      color: white;
+      padding: 90px 8%;
+    }
+
+    .cta h2 {
+      max-width: 760px;
+      margin: 0 auto 20px;
+    }
+
+    .cta p {
+      font-size: 18px;
+      max-width: 650px;
+      margin: 0 auto 30px;
+      opacity: .9;
+    }
+
+    .cta .button {
+      background: white;
+      color: #143657;
+    }
+
+    footer {
+      padding: 35px 8%;
+      text-align: center;
+      font-size: 14px;
+      color: #607589;
+      background: white;
+    }
+
+    footer a {
+      color: #143657;
+    }
+
+    @media (max-width: 850px) {
+      nav {
+        display: none;
+      }
+
+      .hero {
+        min-height: auto;
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+
+      .grid,
+      .split {
+        grid-template-columns: 1fr;
+      }
+
+      .split {
+        gap: 35px;
+      }
+
+      section {
+        padding: 65px 7%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a class="brand" href="index.html">
+      <img src="icon.png" alt="Nurse Medical">
+      Nurse Medical
+    </a>
+
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="index.html#servicios">Servicios</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-content">
+        <div class="eyebrow">Cuidados domiciliarios · Berazategui</div>
+
+        <h1>Cuidadoras a domicilio en Berazategui</h1>
+
+        <p>
+          Acompañamiento cercano y personalizado para personas que necesitan
+          asistencia, supervisión o compañía en su vida cotidiana.
+          En Nurse Medical acompañamos también a sus familias para que puedan
+          organizar el cuidado con mayor tranquilidad.
+        </p>
+
+        <div class="buttons">
+          <a class="button button-primary"
+            href="https://wa.me/5491135798229"
+            target="_blank"
+            rel="noopener">
+            Consultar por WhatsApp
+          </a>
+
+          <a class="button button-secondary" href="#servicio">
+            Conocer el servicio
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="servicio">
+      <div class="section-header">
+        <h2>Un acompañamiento pensado para cada persona</h2>
+
+        <p>
+          El servicio de cuidadoras puede adaptarse a distintas edades,
+          situaciones y necesidades. Evaluamos cada caso para orientar a la
+          familia y organizar un acompañamiento adecuado.
+        </p>
+      </div>
+
+      <div class="grid">
+
+        <article class="card">
+          <h3>Acompañamiento diario</h3>
+          <p>
+            Presencia y contención durante la rutina para que la persona se
+            sienta acompañada y segura en su hogar.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Asistencia personal</h3>
+          <p>
+            Apoyo en actividades de la vida diaria de acuerdo con el nivel de
+            autonomía y las necesidades particulares de cada persona.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Supervisión y prevención</h3>
+          <p>
+            Acompañamiento orientado a mantener una rutina segura y detectar
+            situaciones que puedan requerir mayor atención.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+
+    <section class="section-light">
+
+      <div class="split">
+
+        <div>
+          <h2>¿Qué puede hacer una cuidadora?</h2>
+
+          <p>
+            Las tareas se organizan según las necesidades de cada familia y
+            siempre dentro del rol correspondiente a la cuidadora.
+          </p>
+
+          <ul class="list">
+            <li>Acompañamiento y contención</li>
+            <li>Asistencia en actividades de la vida diaria</li>
+            <li>Preparación y supervisión de alimentos</li>
+            <li>Control y acompañamiento de la rutina de medicación</li>
+            <li>Apoyo en movilidad y seguridad</li>
+            <li>Estimulación y actividades cotidianas</li>
+            <li>Supervisión general del bienestar</li>
+          </ul>
+        </div>
+
+        <aside class="notice">
+          <h3>Cuidadora y enfermera no cumplen el mismo rol</h3>
+
+          <p>
+            Cuando la persona necesita procedimientos de enfermería,
+            curaciones, administración de medicación por vías específicas u
+            otros cuidados profesionales, se evalúa la necesidad de contar con
+            personal de enfermería.
+          </p>
+          <br>
+          <p>
+            Si no sabés qué perfil necesita tu familiar, podemos orientarte
+            según el caso.
+          </p>
+        </aside>
+
+      </div>
+
+    </section>
+
+
+    <section>
+
+      <div class="section-header">
+        <h2>¿Para quién puede ser útil este servicio?</h2>
+
+        <p>
+          No es un servicio exclusivo para adultos mayores. Puede solicitarse
+          cuando una persona necesita acompañamiento adicional durante un
+          período determinado o de manera sostenida.
+        </p>
+      </div>
+
+      <div class="grid">
+
+        <article class="card">
+          <h3>Adultos mayores</h3>
+          <p>
+            Para quienes necesitan compañía, asistencia cotidiana,
+            supervisión o apoyo para continuar su rutina en el hogar.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Personas en recuperación</h3>
+          <p>
+            Acompañamiento durante períodos en los que la persona presenta
+            menor autonomía y necesita ayuda adicional en casa.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Familias que necesitan apoyo</h3>
+          <p>
+            Una alternativa para organizar el cuidado cuando la familia no
+            puede estar presente durante todas las horas necesarias.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+
+    <section class="section-light">
+
+      <div class="section-header">
+        <div class="eyebrow">Cobertura local</div>
+        <h2>Cuidadoras en Berazategui y alrededores</h2>
+
+        <p>
+          Brindamos servicios domiciliarios en Berazategui y distintas
+          localidades de Zona Sur, coordinando cada prestación según
+          disponibilidad y necesidad de la familia.
+        </p>
+      </div>
+
+      <p>
+        También podés consultarnos por cobertura en Ranelagh, Hudson,
+        Plátanos, Quilmes, Bernal, Ezpeleta, Florencio Varela y otras zonas
+        cercanas.
+      </p>
+
+    </section>
+
+
+    <section>
+
+      <div class="section-header">
+        <h2>Preguntas frecuentes</h2>
+      </div>
+
+      <div class="faq">
+
+        <div class="faq-item">
+          <h3>¿El servicio de cuidadoras es solo para adultos mayores?</h3>
+          <p>
+            No. Puede solicitarlo una persona de cualquier edad que necesite
+            asistencia, acompañamiento o supervisión por una situación
+            particular.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>¿Se puede contratar una cuidadora por algunas horas?</h3>
+          <p>
+            Sí. La modalidad y cantidad de horas se evalúan de acuerdo con las
+            necesidades de cada familia y la disponibilidad del servicio.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>¿Una cuidadora puede realizar tareas de enfermería?</h3>
+          <p>
+            Son roles diferentes. Cuando existen procedimientos o cuidados que
+            corresponden a enfermería, se requiere un profesional habilitado
+            para realizarlos.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>¿Trabajan solamente en Berazategui?</h3>
+          <p>
+            No. Nurse Medical brinda cobertura en distintas localidades de
+            Zona Sur y AMBA. Podés escribirnos para consultar disponibilidad
+            en tu zona.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="cta">
+
+      <h2>Contanos qué tipo de acompañamiento necesitás</h2>
+
+      <p>
+        Cada familia tiene una situación diferente. Escribinos y te orientamos
+        para evaluar qué tipo de cuidado puede adaptarse mejor a tu caso.
+      </p>
+
+      <a class="button"
+        href="https://wa.me/5491135798229"
+        target="_blank"
+        rel="noopener">
+        Hablar con Nurse Medical
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>
+      © 2026 Nurse Medical · Servicios de salud domiciliarios ·
+      <a href="https://instagram.com/nursemedical.ar"
+        target="_blank"
+        rel="noopener">
+        Instagram
+      </a>
+    </p>
+  </footer>
+
+</body>
+</html>
