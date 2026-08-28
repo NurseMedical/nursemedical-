@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cuidadoras en Zona Sur | Nurse Medical</title>
+
+  <meta
+    name="description"
+    content="Cuidadoras a domicilio en Zona Sur. Cobertura en Berazategui, Quilmes, Bernal, Ezpeleta, Hudson, Ranelagh, Florencio Varela y zonas cercanas."
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://nursemedical.com.ar/cuidadoras-zona-sur.html"
+  >
+
+  <link rel="icon" type="image/png" href="icon.png">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Belleza&family=Cardo:wght@400;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    :root {
+      --blue: #143657;
+      --blue-medium: #234e72;
+      --blue-light: #eaf0f4;
+      --text: #294b66;
+      --muted: #718493;
+      --line: #dfe7eb;
+      --light: #f5f7f8;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Cardo", serif;
+      color: var(--blue);
+      background: var(--white);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    nav,
+    .button,
+    .eyebrow,
+    .location-button,
+    .map-label {
+      font-family: "Belleza", sans-serif;
+    }
+
+    header {
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,.96);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--blue);
+      font-family: "Belleza", sans-serif;
+      font-size: 22px;
+    }
+
+    .brand img {
+      width: 38px;
+      height: 38px;
+      object-fit: contain;
+    }
+
+    nav {
+      display: flex;
+      gap: 28px;
+    }
+
+    nav a {
+      color: var(--blue);
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      opacity: .6;
+    }
+
+    section {
+      padding: 90px 8%;
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 17px;
+    }
+
+    h1 {
+      font-size: clamp(46px, 7vw, 78px);
+      line-height: 1.02;
+      font-weight: 400;
+      max-width: 900px;
+      margin-bottom: 26px;
+    }
+
+    h2 {
+      font-size: clamp(34px, 4.5vw, 52px);
+      font-weight: 400;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-weight: 400;
+    }
+
+    p {
+      color: var(--text);
+    }
+
+    .intro {
+      font-size: 18px;
+      max-width: 750px;
+    }
+
+    /* HERO */
+
+    .hero {
+      padding-top: 105px;
+      padding-bottom: 85px;
+      background:
+        radial-gradient(circle at 90% 20%, #e5edf2 0, transparent 28%),
+        linear-gradient(120deg, #f1f5f7 0%, #ffffff 70%);
+    }
+
+    .hero-copy {
+      max-width: 850px;
+    }
+
+    .hero-copy > p {
+      font-size: 20px;
+      max-width: 720px;
+      margin-bottom: 33px;
+      color: #3c5d76;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 25px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 17px;
+      transition: transform .25s ease, opacity .25s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-primary {
+      background: var(--blue);
+      color: white;
+    }
+
+    .button-secondary {
+      border: 1px solid var(--blue);
+      color: var(--blue);
+      background: white;
+    }
+
+    /* MARQUEE */
+
+    .locality-strip {
+      overflow: hidden;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: white;
+      padding: 17px 0;
+    }
+
+    .locality-track {
+      width: max-content;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      animation: moveLocalities 26s linear infinite;
+      white-space: nowrap;
+    }
+
+    .locality-track span {
+      font-family: "Belleza", sans-serif;
+      font-size: 16px;
+      color: #47647c;
+    }
+
+    .dot {
+      opacity: .3;
+    }
+
+    @keyframes moveLocalities {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* COVERAGE */
+
+    .coverage {
+      background: white;
+    }
+
+    .coverage-header {
+      max-width: 760px;
+      margin-bottom: 55px;
+    }
+
+    .coverage-layout {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 55px;
+      align-items: stretch;
+    }
+
+    /* MAP */
+
+    .map-panel {
+      background: var(--light);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 30px;
+      min-width: 0;
+    }
+
+    .map-panel svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .connection {
+      stroke: #afbec9;
+      stroke-width: 1.5;
+      stroke-dasharray: 5 7;
+      opacity: .75;
+    }
+
+    .pulse-ring {
+      fill: none;
+      stroke: #143657;
+      stroke-width: 1.5;
+      opacity: .16;
+      transform-origin: center;
+      animation: pulse 3.2s ease-out infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        r: 18;
+        opacity: .23;
+      }
+
+      70%,
+      100% {
+        r: 38;
+        opacity: 0;
+      }
+    }
+
+    .center-circle {
+      fill: #143657;
+    }
+
+    .center-title {
+      fill: white;
+      font-family: "Belleza", sans-serif;
+      font-size: 14px;
+      text-anchor: middle;
+    }
+
+    .node-circle {
+      fill: white;
+      stroke: #143657;
+      stroke-width: 1.8;
+      transition: .25s ease;
+      cursor: pointer;
+    }
+
+    .node-group:hover .node-circle,
+    .node-group.active .node-circle {
+      fill: #143657;
+    }
+
+    .node-text {
+      fill: #143657;
+      font-family: "Belleza", sans-serif;
+      font-size: 13px;
+      text-anchor: middle;
+      pointer-events: none;
+    }
+
+    .node-group:hover .node-text,
+    .node-group.active .node-text {
+      fill: white;
+    }
+
+    .map-note {
+      margin-top: 15px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* LOCATION SIDE */
+
+    .location-panel {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .location-panel h3 {
+      font-size: 27px;
+      margin-bottom: 17px;
+    }
+
+    .location-panel > p {
+      margin-bottom: 27px;
+    }
+
+    .location-buttons {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 9px;
+      margin-bottom: 30px;
+    }
+
+    .location-button {
+      border: 1px solid var(--line);
+      background: white;
+      color: var(--blue);
+      border-radius: 5px;
+      padding: 13px 11px;
+      cursor: pointer;
+      font-size: 15px;
+      transition: .2s ease;
+    }
+
+    .location-button:hover,
+    .location-button.active {
+      background: var(--blue);
+      color: white;
+      border-color: var(--blue);
+    }
+
+    .location-result {
+      background: var(--blue);
+      padding: 27px;
+      border-radius: 8px;
+      color: white;
+      min-height: 185px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .location-result .small {
+      font-family: "Belleza", sans-serif;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      opacity: .72;
+      margin-bottom: 7px;
+    }
+
+    .location-result h3 {
+      font-size: 27px;
+      margin-bottom: 8px;
+    }
+
+    .location-result p {
+      color: rgba(255,255,255,.86);
+      margin-bottom: 17px;
+    }
+
+    .location-result a {
+      color: white;
+      font-family: "Belleza", sans-serif;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    /* DIFFERENTIAL */
+
+    .nearby {
+      background: var(--blue);
+      color: white;
+    }
+
+    .nearby h2,
+    .nearby .eyebrow {
+      color: white;
+    }
+
+    .nearby .intro {
+      color: rgba(255,255,255,.82);
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 1px;
+      background: rgba(255,255,255,.18);
+      margin-top: 50px;
+      border: 1px solid rgba(255,255,255,.15);
+    }
+
+    .benefit {
+      background: var(--blue);
+      padding: 38px;
+      min-height: 215px;
+    }
+
+    .benefit-number {
+      font-family: "Belleza", sans-serif;
+      font-size: 14px;
+      opacity: .45;
+      margin-bottom: 35px;
+    }
+
+    .benefit h3 {
+      font-size: 24px;
+      margin-bottom: 11px;
+    }
+
+    .benefit p {
+      color: rgba(255,255,255,.78);
+    }
+
+    /* NETWORK */
+
+    .network {
+      background: var(--light);
+      overflow: hidden;
+    }
+
+    .network-inner {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 65px;
+      align-items: center;
+    }
+
+    .network-copy p {
+      font-size: 18px;
+      max-width: 550px;
+    }
+
+    .network-visual {
+      position: relative;
+      min-height: 390px;
+      display: grid;
+      place-items: center;
+    }
+
+    .network-center {
+      width: 145px;
+      height: 145px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      background: var(--blue);
+      color: white;
+      font-family: "Belleza", sans-serif;
+      z-index: 3;
+      position: relative;
+    }
+
+    .orbit {
+      position: absolute;
+      border: 1px solid #cbd7de;
+      border-radius: 50%;
+    }
+
+    .orbit.one {
+      width: 260px;
+      height: 260px;
+    }
+
+    .orbit.two {
+      width: 390px;
+      height: 390px;
+    }
+
+    .floating-locality {
+      position: absolute;
+      background: white;
+      border: 1px solid var(--line);
+      padding: 8px 13px;
+      border-radius: 30px;
+      font-family: "Belleza", sans-serif;
+      font-size: 14px;
+      color: var(--blue);
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .f1 { top: 5%; left: 44%; }
+    .f2 { top: 23%; right: 4%; animation-delay: .5s; }
+    .f3 { bottom: 18%; right: 9%; animation-delay: 1.2s; }
+    .f4 { bottom: 3%; left: 39%; animation-delay: .8s; }
+    .f5 { bottom: 19%; left: 3%; animation-delay: 1.5s; }
+    .f6 { top: 23%; left: 4%; animation-delay: .3s; }
+
+    @keyframes float {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-6px);
+      }
+    }
+
+    /* CTA */
+
+    .cta {
+      text-align: center;
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    .cta h2 {
+      max-width: 760px;
+      margin: 0 auto 18px;
+    }
+
+    .cta p {
+      max-width: 650px;
+      font-size: 18px;
+      margin: 0 auto 28px;
+    }
+
+    /* REVEAL */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition:
+        opacity .7s ease,
+        transform .7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    footer {
+      padding: 35px 8%;
+      text-align: center;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    footer a {
+      color: var(--blue);
+    }
+
+    @media (max-width: 900px) {
+      nav {
+        display: none;
+      }
+
+      section {
+        padding: 65px 7%;
+      }
+
+      .hero {
+        padding-top: 75px;
+        padding-bottom: 65px;
+      }
+
+      .coverage-layout,
+      .network-inner,
+      .benefits {
+        grid-template-columns: 1fr;
+      }
+
+      .coverage-layout {
+        gap: 35px;
+      }
+
+      .benefits {
+        gap: 1px;
+      }
+
+      .network-copy {
+        order: 1;
+      }
+
+      .network-visual {
+        order: 2;
+        min-height: 330px;
+        transform: scale(.88);
+      }
+    }
+
+    @media (max-width: 520px) {
+      .location-buttons {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .map-panel {
+        padding: 15px;
+      }
+
+      .network-visual {
+        transform: scale(.74);
+        margin: -35px -50px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Cuidadoras a domicilio en Zona Sur",
+    "provider": {
+      "@type": "Organization",
+      "name": "Nurse Medical",
+      "url": "https://nursemedical.com.ar/"
+    },
+    "areaServed": [
+      "Berazategui",
+      "Ranelagh",
+      "Hudson",
+      "Plátanos",
+      "Quilmes",
+      "Bernal",
+      "Ezpeleta",
+      "Florencio Varela",
+      "Wilde"
+    ],
+    "url": "https://nursemedical.com.ar/cuidadoras-zona-sur.html"
+  }
+  </script>
+</head>
+
+
+<body>
+
+<header>
+  <a class="brand" href="index.html">
+    <img src="icon.png" alt="Nurse Medical">
+    Nurse Medical
+  </a>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="#cobertura">Cobertura</a>
+    <a href="#cercania">Cómo trabajamos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+
+<main>
+
+  <!-- HERO -->
+
+  <section class="hero">
+    <div class="container hero-copy">
+
+      <div class="eyebrow">
+        Cuidados domiciliarios · Zona Sur
+      </div>
+
+      <h1>
+        Cuidadoras a domicilio en Zona Sur
+      </h1>
+
+      <p>
+        Coordinamos servicios domiciliarios en distintas localidades de Zona Sur,
+        priorizando perfiles adecuados para cada caso y profesionales cercanos al
+        domicilio siempre que sea posible.
+      </p>
+
+      <div class="buttons">
+        <a
+          class="button button-primary"
+          href="#cobertura"
+        >
+          Ver zonas de cobertura
+        </a>
+
+        <a
+          class="button button-secondary"
+          href="https://wa.me/5491135798229"
+          target="_blank"
+          rel="noopener"
+        >
+          Consultar disponibilidad
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- MOVING LOCATIONS -->
+
+  <div class="locality-strip" aria-hidden="true">
+    <div class="locality-track">
+
+      <span>Berazategui</span><span class="dot">●</span>
+      <span>Quilmes</span><span class="dot">●</span>
+      <span>Bernal</span><span class="dot">●</span>
+      <span>Ezpeleta</span><span class="dot">●</span>
+      <span>Ranelagh</span><span class="dot">●</span>
+      <span>Hudson</span><span class="dot">●</span>
+      <span>Plátanos</span><span class="dot">●</span>
+      <span>Florencio Varela</span><span class="dot">●</span>
+      <span>Wilde</span><span class="dot">●</span>
+
+      <span>Berazategui</span><span class="dot">●</span>
+      <span>Quilmes</span><span class="dot">●</span>
+      <span>Bernal</span><span class="dot">●</span>
+      <span>Ezpeleta</span><span class="dot">●</span>
+      <span>Ranelagh</span><span class="dot">●</span>
+      <span>Hudson</span><span class="dot">●</span>
+      <span>Plátanos</span><span class="dot">●</span>
+      <span>Florencio Varela</span><span class="dot">●</span>
+      <span>Wilde</span><span class="dot">●</span>
+
+    </div>
+  </div>
+
+
+  <!-- COVERAGE MAP -->
+
+  <section class="coverage" id="cobertura">
+
+    <div class="container">
+
+      <div class="coverage-header reveal">
+
+        <div class="eyebrow">
+          Cobertura
+        </div>
+
+        <h2>
+          ¿En qué zona necesitás acompañamiento?
+        </h2>
+
+        <p class="intro">
+          Seleccioná una localidad para consultar directamente la disponibilidad
+          del servicio en esa zona.
+        </p>
+
+      </div>
+
+
+      <div class="coverage-layout">
+
+        <div class="map-panel reveal">
+
+          <svg
+            viewBox="0 0 620 500"
+            role="img"
+            aria-label="Esquema orientativo de cobertura de Nurse Medical en Zona Sur"
+          >
+
+            <!-- CONNECTIONS -->
+
+            <line class="connection" x1="310" y1="245" x2="140" y2="100"/>
+            <line class="connection" x1="310" y1="245" x2="305" y2="75"/>
+            <line class="connection" x1="310" y1="245" x2="480" y2="110"/>
+            <line class="connection" x1="310" y1="245" x2="505" y2="245"/>
+            <line class="connection" x1="310" y1="245" x2="460" y2="390"/>
+            <line class="connection" x1="310" y1="245" x2="300" y2="430"/>
+            <line class="connection" x1="310" y1="245" x2="125" y2="380"/>
+            <line class="connection" x1="310" y1="245" x2="100" y2="245"/>
+
+            <!-- CENTER -->
+
+            <circle class="pulse-ring" cx="310" cy="245" r="20"/>
+            <circle class="center-circle" cx="310" cy="245" r="58"/>
+            <text class="center-title" x="310" y="240">NURSE</text>
+            <text class="center-title" x="310" y="260">MEDICAL</text>
+
+
+            <!-- NODES -->
+
+            <g class="node-group" data-location="Quilmes" tabindex="0">
+              <circle class="node-circle" cx="140" cy="100" r="40"/>
+              <text class="node-text" x="140" y="105">Quilmes</text>
+            </g>
+
+            <g class="node-group" data-location="Bernal" tabindex="0">
+              <circle class="node-circle" cx="305" cy="75" r="39"/>
+              <text class="node-text" x="305" y="80">Bernal</text>
+            </g>
+
+            <g class="node-group" data-location="Wilde" tabindex="0">
+              <circle class="node-circle" cx="480" cy="110" r="38"/>
+              <text class="node-text" x="480" y="115">Wilde</text>
+            </g>
+
+            <g class="node-group" data-location="Ezpeleta" tabindex="0">
+              <circle class="node-circle" cx="505" cy="245" r="43"/>
+              <text class="node-text" x="505" y="250">Ezpeleta</text>
+            </g>
+
+            <g class="node-group" data-location="Berazategui" tabindex="0">
+              <circle class="node-circle" cx="460" cy="390" r="49"/>
+              <text class="node-text" x="460" y="395">Berazategui</text>
+            </g>
+
+            <g class="node-group" data-location="Hudson" tabindex="0">
+              <circle class="node-circle" cx="300" cy="430" r="39"/>
+              <text class="node-text" x="300" y="435">Hudson</text>
+            </g>
+
+            <g class="node-group" data-location="Ranelagh" tabindex="0">
+              <circle class="node-circle" cx="125" cy="380" r="44"/>
+              <text class="node-text" x="125" y="385">Ranelagh</text>
+            </g>
+
+            <g class="node-group" data-location="Florencio Varela" tabindex="0">
+              <circle class="node-circle" cx="100" cy="245" r="50"/>
+              <text class="node-text" x="100" y="240">Florencio</text>
+              <text class="node-text" x="100" y="257">Varela</text>
+            </g>
+
+          </svg>
+
+          <p class="map-note">
+            Esquema orientativo de cobertura. No representa distancias ni ubicaciones a escala.
+          </p>
+
+        </div>
+
+
+        <div class="location-panel reveal">
+
+          <div>
+
+            <h3>
+              Seleccioná tu localidad
+            </h3>
+
+            <p>
+              La disponibilidad puede variar según la zona, los días y horarios
+              requeridos.
+            </p>
+
+
+            <div class="location-buttons">
+
+              <button class="location-button active" data-location="Berazategui">
+                Berazategui
+              </button>
+
+              <button class="location-button" data-location="Quilmes">
+                Quilmes
+              </button>
+
+              <button class="location-button" data-location="Bernal">
+                Bernal
+              </button>
+
+              <button class="location-button" data-location="Ezpeleta">
+                Ezpeleta
+              </button>
+
+              <button class="location-button" data-location="Ranelagh">
+                Ranelagh
+              </button>
+
+              <button class="location-button" data-location="Hudson">
+                Hudson
+              </button>
+
+              <button class="location-button" data-location="Plátanos">
+                Plátanos
+              </button>
+
+              <button class="location-button" data-location="Florencio Varela">
+                Florencio Varela
+              </button>
+
+              <button class="location-button" data-location="Wilde">
+                Wilde
+              </button>
+
+            </div>
+
+          </div>
+
+
+          <div class="location-result" aria-live="polite">
+
+            <div class="small">
+              Cobertura seleccionada
+            </div>
+
+            <h3 id="selectedLocation">
+              Berazategui
+            </h3>
+
+            <p id="locationText">
+              Consultanos disponibilidad de cuidadoras para Berazategui.
+            </p>
+
+            <a
+              id="locationWhatsapp"
+              href="https://wa.me/5491135798229?text=Hola%20Nurse%20Medical%2C%20quisiera%20consultar%20disponibilidad%20de%20cuidadora%20en%20Berazategui."
+              target="_blank"
+              rel="noopener"
+            >
+              Consultar cobertura →
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- NEARBY -->
+
+  <section class="nearby" id="cercania">
+
+    <div class="container">
+
+      <div class="reveal">
+
+        <div class="eyebrow">
+          Una cobertura más práctica
+        </div>
+
+        <h2>
+          La cercanía también importa
+        </h2>
+
+        <p class="intro">
+          En los servicios domiciliarios, la distancia puede influir en la
+          organización cotidiana. Por eso, siempre que la disponibilidad lo
+          permite, buscamos profesionales que vivan en la misma localidad o en
+          zonas cercanas al domicilio.
+        </p>
+
+      </div>
+
+
+      <div class="benefits reveal">
+
+        <article class="benefit">
+
+          <div class="benefit-number">01</div>
+
+          <h3>Menos distancia</h3>
+
+          <p>
+            Traslados más simples y una movilidad cotidiana más práctica para
+            el personal.
+          </p>
+
+        </article>
+
+
+        <article class="benefit">
+
+          <div class="benefit-number">02</div>
+
+          <h3>Más practicidad</h3>
+
+          <p>
+            La ubicación y los horarios se tienen en cuenta desde el momento de
+            organizar la cobertura.
+          </p>
+
+        </article>
+
+
+        <article class="benefit">
+
+          <div class="benefit-number">03</div>
+
+          <h3>Mayor continuidad</h3>
+
+          <p>
+            Buscamos organizar servicios que puedan sostenerse de manera
+            práctica en el tiempo.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- NETWORK -->
+
+  <section class="network">
+
+    <div class="container network-inner">
+
+      <div class="network-copy reveal">
+
+        <div class="eyebrow">
+          Red local
+        </div>
+
+        <h2>
+          Una red de cuidado que crece en Zona Sur
+        </h2>
+
+        <p>
+          Trabajamos con profesionales de distintas localidades y buscamos
+          ampliar nuestra red de manera local. Esto permite organizar los
+          servicios contemplando tanto las necesidades de cada persona como la
+          realidad de movilidad de cada zona.
+        </p>
+
+      </div>
+
+
+      <div class="network-visual reveal" aria-hidden="true">
+
+        <div class="orbit one"></div>
+        <div class="orbit two"></div>
+
+        <div class="network-center">
+          NURSE<br>MEDICAL
+        </div>
+
+        <span class="floating-locality f1">Quilmes</span>
+        <span class="floating-locality f2">Bernal</span>
+        <span class="floating-locality f3">Berazategui</span>
+        <span class="floating-locality f4">Hudson</span>
+        <span class="floating-locality f5">Ranelagh</span>
+        <span class="floating-locality f6">Varela</span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+
+  <section class="cta" id="contacto">
+
+    <div class="container reveal">
+
+      <div class="eyebrow">
+        Nurse Medical
+      </div>
+
+      <h2>
+        Consultá cobertura de cuidadoras en tu zona
+      </h2>
+
+      <p>
+        Decinos en qué localidad se encuentra la persona y te informamos
+        disponibilidad según la zona y el horario solicitado.
+      </p>
+
+      <a
+        class="button button-primary"
+        href="https://wa.me/5491135798229"
+        target="_blank"
+        rel="noopener"
+      >
+        Consultar por WhatsApp
+      </a>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  © 2026 Nurse Medical · Cuidados domiciliarios en Zona Sur ·
+  <a
+    href="https://instagram.com/nursemedical.ar"
+    target="_blank"
+    rel="noopener"
+  >
+    Instagram
+  </a>
+
+</footer>
+
+
+<script>
+  const localityButtons = document.querySelectorAll(".location-button");
+  const mapNodes = document.querySelectorAll(".node-group");
+
+  const selectedLocation = document.getElementById("selectedLocation");
+  const locationText = document.getElementById("locationText");
+  const locationWhatsapp = document.getElementById("locationWhatsapp");
+
+  function selectLocation(location) {
+
+    selectedLocation.textContent = location;
+
+    locationText.textContent =
+      "Consultanos disponibilidad de cuidadoras para " + location + ".";
+
+    const message =
+      "Hola Nurse Medical, quisiera consultar disponibilidad de cuidadora en " +
+      location +
+      ".";
+
+    locationWhatsapp.href =
+      "https://wa.me/5491135798229?text=" +
+      encodeURIComponent(message);
+
+    localityButtons.forEach(button => {
+      button.classList.toggle(
+        "active",
+        button.dataset.location === location
+      );
+    });
+
+    mapNodes.forEach(node => {
+      node.classList.toggle(
+        "active",
+        node.dataset.location === location
+      );
+    });
+  }
+
+
+  localityButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+      selectLocation(button.dataset.location);
+    });
+
+  });
+
+
+  mapNodes.forEach(node => {
+
+    node.addEventListener("click", () => {
+      selectLocation(node.dataset.location);
+    });
+
+    node.addEventListener("keydown", event => {
+
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        selectLocation(node.dataset.location);
+      }
+
+    });
+
+  });
+
+
+  const revealElements = document.querySelectorAll(".reveal");
+
+  if ("IntersectionObserver" in window) {
+
+    const observer = new IntersectionObserver(
+      entries => {
+
+        entries.forEach(entry => {
+
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+
+        });
+
+      },
+      {
+        threshold: .14
+      }
+    );
+
+    revealElements.forEach(element => observer.observe(element));
+
+  } else {
+
+    revealElements.forEach(element => {
+      element.classList.add("visible");
+    });
+
+  }
+
+
+  selectLocation("Berazategui");
+</script>
+
+</body>
+</html>
