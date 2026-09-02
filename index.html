@@ -30,12 +30,25 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=2656053288185242&ev=PageView&noscript=1"
 /></noscript>
+
+  <link rel="canonical" href="https://nursemedical.com.ar/">
 <!-- End Meta Pixel Code -->
   <!-- republicar sitio -->
 </head>
 
 <body>
-
+<script>
+  if (window.location.hostname === "nursemedical.github.io") {
+    const nuevaRuta = window.location.pathname.replace("/nursemedical-", "");
+    window.location.replace(
+      "https://nursemedical.com.ar" +
+      nuevaRuta +
+      window.location.search +
+      window.location.hash
+    );
+  }
+</script>
+  
 <header class="header">
   <div class="container nav-container">
     <div class="logo">
