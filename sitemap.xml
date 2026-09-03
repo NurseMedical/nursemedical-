@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <url>
-    <loc>https://nursemedical.com.ar/</loc>
-  </url>
-
-  <url>
-    <loc>https://nursemedical.com.ar/cuidadoras-zona-sur.html</loc>
-  </url>
-
-  <url>
-    <loc>https://nursemedical.com.ar/enfermeria-zona-sur.html</loc>
-  </url>
-
+<url>
+<loc>https://nursemedical.com.ar/</loc>
+</url>
+<url>
+<loc>https://nursemedical.com.ar/cuidadoras-zona-sur.html</loc>
+</url>
+<url>
+<loc>https://nursemedical.com.ar/enfermeria-zona-sur.html</loc>
+</url>
+<url>
+<loc>https://nursemedical.com.ar/acompanamiento-terapeutico-zona-sur.html</loc>
+</url>
 </urlset>
